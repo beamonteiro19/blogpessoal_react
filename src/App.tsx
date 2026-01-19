@@ -5,10 +5,13 @@ import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cadastro from "./pages/cadastro/Cadastro";
 import Login from "./pages/login/Login";
+import { AuthProvider } from "./contexts/AuthContext";
+
 
 function App() {
   return (
     <>
+    <AuthProvider>
       <BrowserRouter>
         <Navbar />
         {/* distanciamento enrta cada elemento que compoe a pagina */}
@@ -22,6 +25,7 @@ function App() {
         </div>
         <Footer />
       </BrowserRouter>
+      </AuthProvider>
     </>
   );
 }
