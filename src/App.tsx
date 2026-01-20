@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cadastro from "./pages/cadastro/Cadastro";
 import Login from "./pages/login/Login";
 import { AuthProvider } from "./contexts/AuthContext";
+import ListaTemas from "./components/tema/listatemas/ListaTemas";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             {/* a página de Cadastro será exibida automaticamente como a página inicial do sistema. */}
             <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/cadastro" element={<ListaTemas />} />
           </Routes>
         </div>
         <Footer />
