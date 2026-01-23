@@ -13,11 +13,14 @@ import ListaPostagens from "./components/postagem/listapostagem/ListaPostagem";
 import FormPostagem from "./components/postagem/formpostagem/FormPostagem";
 import DeletarPostagem from "./components/deletarpostagem/DeletarPostagem";
 import Perfil from "./pages/perfil/Perfil";
+import { ToastContainer } from "react-toastify/unstyled";
+
 
 function App() {
   return (
     <>
       <AuthProvider>
+        <ToastContainer />
         <BrowserRouter>
           <Navbar />
           {/* distanciamento enrta cada elemento que compoe a pagina */}
