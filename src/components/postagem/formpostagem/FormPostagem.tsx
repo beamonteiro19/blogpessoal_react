@@ -38,7 +38,7 @@ function FormPostagem() {
 
     async function buscarTemaPorId(id: string) {
         try {
-            await buscar(`/temas/${id}`, setTema, {
+            await buscar(`/tema/${id}`, setTema, {
                 headers: { Authorization: token }
             })
         } catch (error: any) {
@@ -50,7 +50,7 @@ function FormPostagem() {
 
     async function buscarTemas() {
         try {
-            await buscar('/temas', setTemas, {
+            await buscar('/tema', setTemas, {
                 headers: { Authorization: token }
             })
         } catch (error: any) {
