@@ -34,7 +34,7 @@ function ListaTemas() {
 
             setIsLoading(true)
 
-            await buscar('/temas', setTemas, {
+            await buscar('/tema', setTemas, {
                 headers: { Authorization: token }
             })
         } catch (error: any) {
